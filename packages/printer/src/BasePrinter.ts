@@ -372,7 +372,7 @@ export abstract class BasePrinter implements Printer {
           return 78;
       }
     })();
-    const encoded = encode(data, 'pc437_usa'); // ascii
+    const encoded = encode(data, 'korea'); // ascii
     this.cmds.push({
       name: 'barcodePrint',
       args: [data, type],
